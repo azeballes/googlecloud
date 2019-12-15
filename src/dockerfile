@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/dotnet/core/aspnet
+
+EXPOSE 5000
+
+WORKDIR /app
+
+COPY ./app .
+
+CMD dotnet ./HelloApi.dll
